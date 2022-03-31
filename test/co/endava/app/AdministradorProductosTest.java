@@ -13,10 +13,15 @@ class AdministradorProductosTest {
     @Test
     public void main() {
         double descuento;
-        descuento = 200.0;
-        Comida p3 = new Comida(103, "Pastel", 2000, LocalDate.now());
+        String nombre;
+        nombre = "Pastel";
+        descuento = 150.0;
+        Comida p3 = new Comida(103, "Pastel", 1500, LocalDate.now());
+        //Validación descuento
         assertEquals(descuento,p3.getDescuento());
 
+        //Validación nombre
+        assertEquals(nombre,p3.getNombre());
 
 
     }
